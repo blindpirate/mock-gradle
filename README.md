@@ -1,3 +1,2 @@
 # mock-gradle
 
-test
