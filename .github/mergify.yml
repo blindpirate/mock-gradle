@@ -5,12 +5,14 @@ pull_request_rules:
       - check-success=Quick Feedback - Linux Only (Trigger) (Check)
     actions:
       merge:
-        method: merge
-        strict: true
+        method: rebase
+        strict: smart+fasttrack
+        strict_method: rebase
   - name: Trigger mergify on TestAndMerge command
     conditions:
       - check-success=Bot Triggers Mergify
     actions:
       merge:
-        method: merge
+        method: rebase
         strict: smart+fasttrack
+        strict_method: rebase
